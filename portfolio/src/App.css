@@ -1,0 +1,420 @@
+.App {
+    padding-top: 1px;
+}
+.arrowUp{
+    color: white;
+    position: fixed;
+    font-size: 25px;
+    bottom: 20px;
+    right: 20px;
+}
+.Navigation {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(27, 27, 27);
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    top: 0;
+    z-index: 90;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+    background-color: black;
+}
+
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li {
+    list-style: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.sidebarMenuInner li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[class=openSidebarMenu]:checked~#sidebarMenu {
+    transform: translateX(0);
+}
+
+input[class=openSidebarMenu] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 15px;
+    right: 15px;
+    height: 22px;
+    width: 22px;
+}
+.sidebarIconToggle:hover{
+    position: fixed;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    background-color: white;
+    border-radius: 4px;
+    z-index: 99;
+}
+
+.spinner.part-1 {
+    width: 80%;
+}
+
+.spinner.part-3 {
+    width: 60%;
+}
+
+.spinner.part-2 {
+    width: 100%;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: right;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: right;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: right;
+    margin-top: 3px;
+}
+
+input[class="openSidebarMenu"]:checked~.sidebarIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[class="openSidebarMenu"]:checked~.sidebarIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+    width: 100%;
+}
+
+input[class="openSidebarMenu"]:checked~.sidebarIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+    width: 100%;
+}
+
+header {
+    border-bottom: 1px solid rgb(116, 116, 116);
+    padding: 0 0 20px 0;
+}
+
+.OverviewText {
+    text-align: center;
+}
+
+.OverviewText h1 {
+    background: -webkit-linear-gradient(0deg, rgb(38, 248, 255),#01d032);
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    -webkit-text-fill-color: transparent;
+}
+
+.OverviewText p {
+    color: #6b7280;
+}
+
+.OverviewSocials {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.OverviewSocials .fa {
+    font-size: 20px;
+}
+
+.OverviewSocials .fa.github {
+    color: white;
+}
+
+.OverviewSocials .fa.twitter {
+    color: rgb(25, 140, 255);
+}
+
+.OverviewSocials .fa.linkedin {
+    color: rgb(255, 139, 220);
+}
+
+.OverviewSocials .fa.facebook {
+    color: rgb(44, 104, 255);
+}
+
+.About,
+.Services,
+.Skill,
+.Projects,
+.HireMe {
+    padding: 40px 10% 40px 10%;
+    border-bottom: 1px solid rgb(116, 116, 116);
+}
+
+.title h2 {
+    color: #01d032;
+    text-align: left;
+}
+
+.title h2 hr {
+    height: 2px;
+    border: 1.5px solid #6b7280;
+    width: 5%;
+    border-radius: 2px;
+    margin-left: 0;
+    margin-top: 0;
+    text-align: left;
+}
+
+.About {
+    text-align: center;
+}
+
+.About img {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #6b7280;
+    border-radius: 50px;
+}
+
+.About .description {
+    text-align: center;
+    color: #6b7280;
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+    padding: 20px 0 0 0;
+}
+
+.Skill .Skills {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px 0 0 0;
+    flex-wrap: wrap;
+}
+
+.Skill .fa {
+    color: #6b7280;
+    font-size: 50px;
+    padding: 20px 0 0 0;
+}
+
+.Services {
+    text-align: center;
+}
+
+.Services p {
+    color: #6b7280;
+    font-size: 20px;
+}
+
+.Service {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Service h3 {
+    color: white;
+    margin: 0;
+}
+
+.Service p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.img-template {
+    color: lime;
+    font-size: 40px;
+}
+
+.Projects {
+    text-align: center;
+}
+
+.Projects p {
+    color: #6b7280;
+}
+
+.Project {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid #6b7280;
+    border-radius: 7px;
+}
+
+.Project img {
+    width: 100%;
+}
+
+.Project h3 {
+    color: white;
+}
+
+.Project p {
+    color: #6b7280;
+    font-size: 10px;
+    width: 80%;
+    margin: 0 auto 10px auto;
+}
+
+.Project .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Project .tools p {
+    color: white;
+    width: auto;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    margin: 0 3px 10px 3px;
+    background-color: rgba(0, 255, 0, 0.518);
+}
+
+.Project .Project-btn {
+    display: flex;
+    justify-content: space-around;
+    gap: 3%;
+}
+
+.Project .Project-btn button {
+    border: none;
+    font-size: 15px;
+    padding: 5px 8%;
+    color: white;
+    background-color: rgb(8, 196, 8);
+}
+
+.ShortContact {
+    padding: 20px 0;
+}
+
+.ShortContact p {
+    color: white;
+}
+
+.ShortContact .contact {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.ShortContact .contact .email {
+    font-size: 14px;
+}
+
+.ShortContact .contact .address {
+    color: rgb(190, 186, 186);
+    font-size: 13px;
+}
+
+.InputMessage {
+    color: #6b7280;
+    padding: 40px 0;
+}
+
+.InputMessage form {
+    display: flex;
+    flex-direction: column;
+}
+
+.InputMessage form .input {
+    background-color: #6b728053;
+    border: 1px solid #6b7280;
+    padding: 8px 5px;
+    border-radius: 3px;
+    margin: 10px 0;
+    color: lime;
+}
+
+.InputMessage form .input:focus {
+    outline: 1px solid lime;
+    border: none;
+}
+
+.InputMessage form .input.n3 {
+    min-height: 100px;
+    max-width: 100%;
+}
+
+.InputMessage form button {
+    width: 20%;
+    margin: auto;
+    padding: 5px 10px;
+    border: none;
+    background-color: lime;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.Footer p {
+    color: #6b7280;
+    text-align: center;
+    padding: 2px 0 10px 0;
+}
