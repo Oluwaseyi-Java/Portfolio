@@ -21,6 +21,7 @@ const Projects = () => {
                 imgUrl={project.imgUrl}
                 visitSite={project.websiteUrl}
                 visitSource={project.sourceUrl}
+                tools={project.tools}
                 
             />
         )

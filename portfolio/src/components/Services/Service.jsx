@@ -4,7 +4,7 @@ const Service = (props) => {
   return (
       <div className='Service'>
           <span>{props.font}</span>
-          <h3>{props.title}</h3>
+          <h2>{props.title}</h2>
           <p>{ props.description}</p>
       </div>
   )

@@ -1,13 +1,15 @@
 .App {
     padding-top: 1px;
 }
-.arrowUp{
+
+.arrowUp {
     color: white;
     position: fixed;
     font-size: 25px;
     bottom: 20px;
     right: 20px;
 }
+
 .Navigation {
     width: 100%;
     height: 50px;
@@ -78,9 +80,13 @@ input[class=openSidebarMenu] {
     height: 22px;
     width: 22px;
 }
-.sidebarIconToggle:hover{
+.checkProperty{
     position: fixed;
 }
+.sidebarIconToggle:active {
+    position: fixed;
+}
+
 .spinner {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -153,15 +159,25 @@ header {
     padding: 0 0 20px 0;
 }
 
+header .Navigation {
+    display: flex;
+}
+
+header .Navigation img {
+    height: 70%;
+    margin: auto 20px;
+}
+
 .OverviewText {
     text-align: center;
 }
 
 .OverviewText h1 {
-    background: -webkit-linear-gradient(0deg, rgb(38, 248, 255),#01d032);
+    background: -webkit-linear-gradient(0deg, rgb(38, 248, 255), #01d032);
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    margin: 30px 0 0 0;
     -webkit-text-fill-color: transparent;
 }
 
@@ -199,15 +215,20 @@ header {
 .About,
 .Services,
 .Skill,
-.Projects,
-.HireMe {
+.Projects {
     padding: 40px 10% 40px 10%;
+    border-bottom: 1px solid rgb(116, 116, 116);
+}
+
+.HireMe {
+    padding: 40px 5%;
     border-bottom: 1px solid rgb(116, 116, 116);
 }
 
 .title h2 {
     color: #01d032;
     text-align: left;
+    font-size: 1.7em;
 }
 
 .title h2 hr {
@@ -235,9 +256,9 @@ header {
 .About .description {
     text-align: center;
     color: #6b7280;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    font-size: 15px;
+    font-size: 1.2em;
     padding: 20px 0 0 0;
 }
 
@@ -251,7 +272,7 @@ header {
 
 .Skill .fa {
     color: #6b7280;
-    font-size: 50px;
+    font-size: 4.0em;
     padding: 20px 0 0 0;
 }
 
@@ -261,24 +282,25 @@ header {
 
 .Services p {
     color: #6b7280;
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 .Service {
-    width: 70%;
+    width: 95%;
     margin: auto;
     text-align: center;
     padding: 20px 0;
 }
 
-.Service h3 {
+.Service h2 {
     color: white;
+    font-size: 1.5em;
     margin: 0;
 }
 
 .Service p {
     color: #6b7280;
-    font-size: 15px;
+    font-size: 1.2em;
 }
 
 .img-template {
@@ -292,6 +314,7 @@ header {
 
 .Projects p {
     color: #6b7280;
+    font-size: 1.3em;
 }
 
 .Project {
@@ -309,11 +332,13 @@ header {
 
 .Project h3 {
     color: white;
+    margin: 10px 0;
+    font-size: 1.6em;
 }
 
 .Project p {
     color: #6b7280;
-    font-size: 10px;
+    font-size: 0.8em;
     width: 80%;
     margin: 0 auto 10px auto;
 }
@@ -329,7 +354,7 @@ header {
     width: auto;
     padding: 2px 8px;
     border-radius: 2px;
-    font-size: 10px;
+    font-size: 0.7em;
     margin: 0 3px 10px 3px;
     background-color: rgba(0, 255, 0, 0.518);
 }
@@ -342,9 +367,9 @@ header {
 
 .Project .Project-btn button {
     border: none;
-    font-size: 15px;
-    padding: 5px 8%;
+    padding: 5px 10%;
     color: white;
+    border-radius: 2px;
     background-color: rgb(8, 196, 8);
 }
 
@@ -354,6 +379,7 @@ header {
 
 .ShortContact p {
     color: white;
+    font-size: 1.1em;
 }
 
 .ShortContact .contact {
@@ -365,12 +391,12 @@ header {
 }
 
 .ShortContact .contact .email {
-    font-size: 14px;
+    font-size: 1.0em;
 }
 
 .ShortContact .contact .address {
     color: rgb(190, 186, 186);
-    font-size: 13px;
+    font-size: 0.9em;
 }
 
 .InputMessage {
@@ -407,7 +433,7 @@ header {
     margin: auto;
     padding: 5px 10px;
     border: none;
-    background-color: lime;
+    background-color: green;
     color: white;
     font-size: 15px;
     border-radius: 2px;

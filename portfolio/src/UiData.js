@@ -11,7 +11,7 @@ export const ProjectData = [
         imgUrl: "Screenshot(11)",
         websiteUrl: "www.google.com",
         sourceUrl: "www.google.com",
-
+        tools: ["React", "useReducer","CSS", "HTML"]
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ export const ProjectData = [
         imgUrl: "Screenshot(12)",
         websiteUrl: "www.google.com",
         sourceUrl: "www.google.com",
-
+        tools: ["React", "React Reveal","CSS", "HTML"]
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ export const ProjectData = [
         imgUrl: "Screenshot(13)",
         websiteUrl: "www.google.com",
         sourceUrl: "www.google.com",
-
+        tools: ["React","Data Fetching", "CSS", "HTML"]
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ export const ProjectData = [
         imgUrl: "Screenshot(13)",
         websiteUrl: "www.google.com",
         sourceUrl: "www.google.com",
-
+        tools: ["React","Conditional Rendering", "CSS", "HTML"]
     }
 ]
 
