@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Title from '../Title'
 import Project from './Project'
 import { ProjectData } from "../../UiData.js"
-
+import Zoom from 'react-reveal/Zoom';
 
 const Projects = () => {
 
@@ -10,9 +10,9 @@ const Projects = () => {
 
     useEffect(() => {
         setState(ProjectData)
-    },[])
+    }, [])
 
-    const projects = state.map((project,index) => {
+    const projects = state.map((project, index) => {
         return (
             <Project
                 key={project.id}
@@ -22,7 +22,7 @@ const Projects = () => {
                 visitSite={project.websiteUrl}
                 visitSource={project.sourceUrl}
                 tools={project.tools}
-                
+
             />
         )
     })
@@ -32,7 +32,9 @@ const Projects = () => {
         <div className='Projects' id='projects'>
             <Title title="Projects" />
             <p>My Latest Work</p>
-            {projects}
+            <Zoom>
+                {projects}
+            </Zoom>
         </div>
     )
 }
