@@ -378,16 +378,11 @@ header .Navigation img {
     background-color: rgba(0, 255, 0, 0.518);
 }
 
-.Project .Project-btn {
-    display: flex;
-    justify-content: space-around;
-    gap: 3%;
-}
-
 .Project .Project-btn button {
     border: none;
-    padding: 5px 10%;
+    padding: 10px 30%;
     color: white;
+    font-size: 1em;
     border-radius: 2px;
     background-color: rgb(5, 144, 5);
 }
