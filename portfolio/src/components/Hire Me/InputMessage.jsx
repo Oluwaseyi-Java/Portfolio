@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
+import emailjs from "@emailjs/browser"
 
 const InputMessage = () => {
 
+    const formRef =useRef()
     const [data, setData] = useState({
         name: "",
         email: "",
@@ -12,6 +14,12 @@ const InputMessage = () => {
     const HandleSubmit = (e) => {
         e.preventDefault();
 
+        emailjs.sendForm('service_t57visu', 'template_j6050ag', formRef.current, 'HBdnGMEy06FusMmtz')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
         console.log(data)
         setData({
@@ -21,6 +29,7 @@ const InputMessage = () => {
         })
 
     }
+
     // const HandleChange = (e) => {
     //     e.preventDefault();
 
@@ -38,7 +47,7 @@ const InputMessage = () => {
     return (
         <div className='InputMessage'>
 
-            <form action='adeseyitu@gmail.com' onSubmit={HandleSubmit}>
+            <form action='adeseyitu@gmail.com' onSubmit={HandleSubmit} ref={formRef}>
                 <label htmlFor='name' >Name*</label>
                 <input
                     required
