@@ -7,13 +7,13 @@ import Logo from "../../images/adeseyi.png"
 const Header = () => {
   return (
     <header>
-      
+
       <div className='Navigation'>
-        <img src={Logo} alt="AdeseyiLogo" />  
-      <Navigation />
+        <img src={Logo} alt="AdeseyiLogo" />
+        <Navigation />
       </div>
-          <Overview/>
-      </header>
+      <Overview />
+    </header>
   )
 }
 

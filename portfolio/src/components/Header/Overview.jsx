@@ -8,7 +8,7 @@ const Overview = () => {
 
   
   return (
-    <>
+    <div className='overview'>
       <div className='OverviewText'>
         <h1>Design. Build. Improve</h1>
         <p>I create beautiful websites your users will love.</p>
@@ -19,7 +19,7 @@ const Overview = () => {
         <FaLinkedin className='fa linkedin'  />
         <FaFacebook  className='fa facebook' />
       </div>
-    </>
+    </div>
   )
 }
 

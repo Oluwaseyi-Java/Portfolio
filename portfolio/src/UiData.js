@@ -9,8 +9,8 @@ export const ProjectData = [
         title: "To Do List",
         description: "An interactive web app to help you schedule your data. Also helps you in time management.",
         imgUrl: "Screenshot(11)",
-        websiteUrl: "www.google.com",
-        sourceUrl: "www.google.com",
+        websiteUrl: "https://todo-qwcybdacz-oluwaseyi-java.vercel.app/",
+        sourceUrl: "https://www.google.com",
         tools: ["React", "useReducer","CSS", "HTML"]
     },
     {
@@ -18,8 +18,8 @@ export const ProjectData = [
         title: "E-commerce Website",
         description: "A typical e-commerce website landing page template. ",
         imgUrl: "Screenshot(12)",
-        websiteUrl: "www.google.com",
-        sourceUrl: "www.google.com",
+        websiteUrl: "https://e-commerce-project-o9kueqvuf-oluwaseyi-java.vercel.app/",
+        sourceUrl: "https://github.com/Oluwaseyi-Java/E-commerceProject/tree/main/e-commerce",
         tools: ["React", "React Reveal","CSS", "HTML"]
     },
     {
@@ -27,8 +27,8 @@ export const ProjectData = [
         title: "Weather App",
         description: "A web app created for you to the weather of different cities around the world.",
         imgUrl: "Screenshot(13)",
-        websiteUrl: "www.google.com",
-        sourceUrl: "www.google.com",
+        websiteUrl: "https://weather-app-rose-five.vercel.app/",
+        sourceUrl: "https://github.com/Oluwaseyi-Java/WeatherApp",
         tools: ["React","Data Fetching", "CSS", "HTML"]
     },
     {
@@ -36,8 +36,8 @@ export const ProjectData = [
         title: "Quiz App",
         description: "A simple web app to take test or quiz.",
         imgUrl: "Screenshot(13)",
-        websiteUrl: "www.google.com",
-        sourceUrl: "www.google.com",
+        websiteUrl: "https://quiz-app-gray-xi.vercel.app/questions",
+        sourceUrl: "https://github.com/Oluwaseyi-Java/QuizApp/tree/main/quiz-app",
         tools: ["React","Conditional Rendering", "CSS", "HTML"]
     }
 ]
