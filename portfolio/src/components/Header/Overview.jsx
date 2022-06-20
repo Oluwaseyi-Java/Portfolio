@@ -14,10 +14,10 @@ const Overview = () => {
         <p>I create beautiful websites your users will love.</p>
       </div>
       <div className='OverviewSocials'>
-        <FaGithub  className='fa github' />
-        <FaTwitter  className='fa twitter' />
-        <FaLinkedin className='fa linkedin'  />
-        <FaFacebook  className='fa facebook' />
+       <a href='https://github.com/Oluwaseyi-Java'> <FaGithub  className='fa github' /></a>
+        <a href='https://github.com/Oluwaseyi-Java'><FaTwitter  className='fa twitter' /></a>
+       <a href='https://github.com/Oluwaseyi-Java'> <FaLinkedin className='fa linkedin'  /></a>
+       <a href='https://github.com/Oluwaseyi-Java'> <FaFacebook  className='fa facebook' /></a>
       </div>
     </div>
   )

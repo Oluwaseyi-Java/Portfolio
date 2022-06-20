@@ -8,7 +8,7 @@ export const ProjectData = [
         id: 1,
         title: "To Do List",
         description: "An interactive web app to help you schedule your data. Also helps you in time management.",
-        imgUrl: "Screenshot(11)",
+        imgUrl: "Screenshot(22)",
         websiteUrl: "https://todo-qwcybdacz-oluwaseyi-java.vercel.app/",
         sourceUrl: "https://www.google.com",
         tools: ["React", "useReducer","CSS", "HTML"]
@@ -35,7 +35,7 @@ export const ProjectData = [
         id: 4,
         title: "Quiz App",
         description: "A simple web app to take test or quiz.",
-        imgUrl: "Screenshot(13)",
+        imgUrl: "Screenshot(12)",
         websiteUrl: "https://quiz-app-gray-xi.vercel.app/questions",
         sourceUrl: "https://github.com/Oluwaseyi-Java/QuizApp/tree/main/quiz-app",
         tools: ["React","Conditional Rendering", "CSS", "HTML"]

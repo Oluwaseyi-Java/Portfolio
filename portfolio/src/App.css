@@ -211,23 +211,23 @@ header .Navigation img {
     position: relative;
 }
 
-.OverviewSocials .fa {
+.OverviewSocials a .fa {
     font-size: 20px;
 }
 
-.OverviewSocials .fa.github {
+.OverviewSocials a .fa.github {
     color: white;
 }
 
-.OverviewSocials .fa.twitter {
+.OverviewSocials a .fa.twitter {
     color: rgb(25, 140, 255);
 }
 
-.OverviewSocials .fa.linkedin {
+.OverviewSocials a .fa.linkedin {
     color: rgb(255, 139, 220);
 }
 
-.OverviewSocials .fa.facebook {
+.OverviewSocials a .fa.facebook {
     color: rgb(44, 104, 255);
 }
 
@@ -313,7 +313,7 @@ header .Navigation img {
 
 .Service h2 {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0;
 }
 
@@ -352,7 +352,7 @@ header .Navigation img {
 .Project h3 {
     color: white;
     margin: 10px 0;
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 
 .Project p {
@@ -401,12 +401,34 @@ header .Navigation img {
     font-size: 1.1em;
 }
 
-.ShortContact .contact {
+.ShortContact .contact,
+.ShortContact .cv {
     display: flex;
-    width: 70%;
+    width: 80%;
     justify-content: space-between;
     margin: auto;
     align-items: center;
+}
+
+.ShortContact .cv button {
+    font-size: 1em;
+    padding: 5px 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    background-color: transparent;
+    color: #01d032;
+    align-items: center;
+    border: none;
+}
+
+.ShortContact .cv button .fa {
+    font-size: 1.2em;
+}
+
+.ShortContact .cv button:active {
+    border: 1px solid #01d032;
+    border-radius: 2px;
 }
 
 .ShortContact .contact .email {
