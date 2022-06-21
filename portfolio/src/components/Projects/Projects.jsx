@@ -33,8 +33,8 @@ const Projects = () => {
             <Title title="Projects" />
             <p>My Latest Work</p>
             <Zoom>
-                {projects}
             </Zoom>
+            {projects}
         </div>
     )
 }
