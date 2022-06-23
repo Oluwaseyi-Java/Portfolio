@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Title from '../Title'
 import Project from './Project'
 import { ProjectData } from "../../UiData.js"
-import Zoom from 'react-reveal/Zoom';
+
+import Pulse from 'react-reveal/Pulse';
 
 const Projects = () => {
 
@@ -31,10 +32,12 @@ const Projects = () => {
     return (
         <div className='Projects' id='projects'>
             <Title title="Projects" />
-            <p>My Latest Work</p>
-            <Zoom>
-            </Zoom>
-            {projects}
+            <Pulse>
+                <p>My Latest Work</p>
+            </Pulse>
+            <div className='project-display'>
+                {projects}
+            </div>
         </div>
     )
 }

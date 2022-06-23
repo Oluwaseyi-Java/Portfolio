@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
@@ -9,7 +9,24 @@ import Services from './components/Services/Services';
 import Skill from './components/Skills/Skill';
 import { FaArrowCircleUp } from "react-icons/fa"
 
+
 function App() {
+
+//   const [count, setCount] = useState(0)
+  
+//   const Event=() => {
+//     setCount(window.innerWidth)
+//   }
+//   useEffect(() => {
+//     window.addEventListener("resize", Event)
+// console.log(count)
+//     return () => {
+//      window.removeEventListener("resize",Event)
+//     }
+//   }, [count])
+
+
+
   return (
     <div className="App" id='home'>
       <Header />
@@ -24,7 +41,7 @@ function App() {
       <HireMe />
       <Footer />
       <a href='#home'>
-      <FaArrowCircleUp className='arrowUp'/>
+        <FaArrowCircleUp className='arrowUp' />
       </a>
     </div>
   );

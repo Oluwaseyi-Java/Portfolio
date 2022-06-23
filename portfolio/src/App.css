@@ -10,7 +10,7 @@
     right: 20px;
 }
 
-.Navigation {
+.Header {
     width: 100%;
     height: 50px;
     background-color: transparent;
@@ -160,11 +160,11 @@ header {
     border-bottom: 1px solid rgb(116, 116, 116);
 }
 
-header .Navigation {
+header .Header {
     display: flex;
 }
 
-header .Navigation img {
+header .Header img {
     height: 70%;
     margin: auto 20px;
 }
@@ -183,7 +183,7 @@ header .Navigation img {
     width: 100%;
     height: 100%;
     opacity: 0.2;
-    background: url('./components/Header/overview.jpg') center;
+    background: url('./components/Header/overview.jpg') center no-repeat;
 }
 
 .OverviewText {
@@ -385,6 +385,7 @@ header .Navigation img {
     font-size: 1em;
     border-radius: 2px;
     background-color: rgb(5, 144, 5);
+    cursor: pointer;
 }
 
 .ShortContact {
@@ -415,6 +416,8 @@ header .Navigation img {
     color: #01d032;
     align-items: center;
     border: none;
+    cursor: pointer;
+
 }
 
 .ShortContact .cv button .fa {
@@ -472,11 +475,144 @@ header .Navigation img {
     background-color: green;
     color: white;
     font-size: 15px;
+    cursor: pointer;
     border-radius: 2px;
 }
 
 .Footer p {
     color: #6b7280;
     text-align: center;
+    padding: 2px 0 0 0;
+}
+
+.Footer {
     padding: 2px 0 10px 0;
+}
+
+@media(min-width: 700px) {
+    .Header {
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #sidebarMenu {
+        position: initial;
+        width: 100%;
+        transform: translateX(0);
+        background: transparent;
+        height: auto;
+    }
+
+    .sidebarMenuInner li {
+
+        padding: 5px;
+        border-bottom: none;
+    }
+
+    .sidebarMenuInner {
+        display: flex;
+        border: none;
+        list-style-type: none;
+
+    }
+
+    .sidebarMenuInner li span {
+        display: none;
+    }
+
+    .sidebarMenuInner li a {
+        text-transform: none;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 5px;
+    }
+
+    .openSidebarMenu {
+        display: none;
+    }
+
+    .sidebarIconToggle {
+        display: none;
+    }
+
+    .OverviewText h1 {
+        font-size: 2.8em;
+    }
+
+    .OverviewText p {
+        font-size: 1.5em;
+    }
+
+    .About,
+    .Services,
+    .Skill,
+    .Projects {
+        padding: 40px 15% 40px 15%;
+        border-bottom: 1px solid rgb(116, 116, 116);
+    }
+
+    .HireMe {
+        padding: 40px 15%;
+    }
+
+    .About img {
+        width: 40%;
+    }
+
+    .Skill .fa {
+        font-size: 5.0em;
+    }
+
+    .service-display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Service {
+        width: 45%;
+    }
+
+    .Service p {
+        font-size: 1.0em;
+    }
+
+    .project-display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Project {
+        width: 40%;
+    }
+}
+
+@media(min-width:1030px) {
+    .About img {
+        width: 30%;
+    }
+
+    .Skill .fa {
+        font-size: 4.5em;
+    }
+
+    .Service {
+        width: 40%;
+    }
+
+    .Project {
+        width: 35%;
+    }
+
+    .contact-message {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ShortContact,
+    .InputMessage {
+        width: 45%;
+    }
 }

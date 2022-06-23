@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react'
 import emailjs from "@emailjs/browser"
-
+import Zoom from "react-reveal/Zoom"
 const InputMessage = () => {
 
-    const formRef =useRef()
+    const formRef = useRef()
     const [data, setData] = useState({
         name: "",
         email: "",
@@ -45,50 +45,53 @@ const InputMessage = () => {
     // }
 
     return (
-        <div className='InputMessage'>
+        <Zoom>
+            <div className='InputMessage'>
 
-            <form action='adeseyitu@gmail.com' onSubmit={HandleSubmit} ref={formRef}>
-                <label htmlFor='name' >Name*</label>
-                <input
-                    required
-                    className='input n1'
-                    type="text"
-                    name="name"
-                    value={data.name}
-                    onChange={(e) => setData({
-                        ...data,
-                        name: e.target.value,
+                <form action='adeseyitu@gmail.com' onSubmit={HandleSubmit} ref={formRef}>
+                    <label htmlFor='name' >Name*</label>
+                    <input
+                        required
+                        className='input n1'
+                        type="text"
+                        name="name"
+                        value={data.name}
+                        onChange={(e) => setData({
+                            ...data,
+                            name: e.target.value,
 
-                    })}
-                />
-                <label htmlFor='email' >Email*</label>
-                <input
-                    required
-                    className='input n2'
-                    type="e-mail"
-                    name="email"
-                    value={data.email}
-                    onChange={(e) => setData({
-                        ...data,
-                        email: e.target.value.trim(),
+                        })}
+                    />
+                    <label htmlFor='email' >Email*</label>
+                    <input
+                        required
+                        className='input n2'
+                        type="e-mail"
+                        name="email"
+                        value={data.email}
+                        onChange={(e) => setData({
+                            ...data,
+                            email: e.target.value.trim(),
 
-                    })}
-                />
-                <label htmlFor='message' >Message*</label>
-                <textarea
-                    required
-                    className='input n3'
-                    name='message'
-                    value={data.message}
-                    onChange={(e) => setData({
-                        ...data,
-                        message: e.target.value
-                    })}
-                />
-                <button>SEND</button>
-            </form>
+                        })}
+                    />
+                    <label htmlFor='message' >Message*</label>
+                    <textarea
+                        required
+                        className='input n3'
+                        name='message'
+                        maxLength="700"
+                        value={data.message}
+                        onChange={(e) => setData({
+                            ...data,
+                            message: e.target.value
+                        })}
+                    />
+                    <button>SEND</button>
+                </form>
 
-        </div>
+            </div>
+        </Zoom>
     )
 }
 

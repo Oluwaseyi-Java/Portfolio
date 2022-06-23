@@ -5,10 +5,10 @@ import { ServiceData } from "../../UiData.js"
 
 const Services = () => {
     const [state, setState] = useState([])
-    
+
     useEffect(() => {
         setState(ServiceData)
-    },[])
+    }, [])
     const serves = state.map((serve) => {
         return (
             <Service
@@ -23,7 +23,9 @@ const Services = () => {
         <div className='Services' id='services'>
             <Title title="Services" />
             <p>What can I do for you?</p>
-            {serves}
+            <div className='service-display'>
+                {serves}
+            </div>
         </div>
     )
 }

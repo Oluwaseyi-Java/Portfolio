@@ -6,11 +6,13 @@ import ShortContact from "./shortConatct"
 const HireMe = () => {
   return (
     <div className='HireMe' id='hire-me'>
-          <Title title="Hire Me" />
-          
-          <ShortContact />
-          <InputMessage/>
+      <Title title="Hire Me" />
+
+      <div className='contact-message'>
+        <ShortContact />
+        <InputMessage />
       </div>
+    </div>
   )
 }
 
