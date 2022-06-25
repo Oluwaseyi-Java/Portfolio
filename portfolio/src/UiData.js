@@ -36,9 +36,9 @@ export const ProjectData = [
         title: "Quiz App",
         description: "A simple web app to take test or quiz.",
         imgUrl: "Screenshot(12)",
-        websiteUrl: "https://quiz-app-gray-xi.vercel.app/questions",
-        sourceUrl: "https://github.com/Oluwaseyi-Java/QuizApp/tree/main/quiz-app",
-        tools: ["React","Conditional Rendering", "CSS", "HTML"]
+        websiteUrl: "https://question-app-ten.vercel.app/",
+        sourceUrl: "https://github.com/Oluwaseyi-Java/QuestionApp",
+        tools: ["React","Conditional Rendering", "CSS", "ContextAPI"]
     }
 ]
 
