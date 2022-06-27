@@ -11,7 +11,7 @@ export const ProjectData = [
         imgUrl: "Screenshot(22)",
         websiteUrl: "https://todo-qwcybdacz-oluwaseyi-java.vercel.app/",
         sourceUrl: "https://www.google.com",
-        tools: ["React", "useReducer","CSS", "HTML"]
+        tools: ["React", "useReducer", "CSS", "HTML"]
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ export const ProjectData = [
         imgUrl: "Screenshot(12)",
         websiteUrl: "https://e-commerce-project-o9kueqvuf-oluwaseyi-java.vercel.app/",
         sourceUrl: "https://github.com/Oluwaseyi-Java/E-commerceProject/tree/main/e-commerce",
-        tools: ["React", "React Reveal","CSS", "HTML"]
+        tools: ["React", "React Reveal", "CSS", "HTML"]
     },
     {
         id: 3,
@@ -29,16 +29,25 @@ export const ProjectData = [
         imgUrl: "Screenshot(13)",
         websiteUrl: "https://weather-app-rose-five.vercel.app/",
         sourceUrl: "https://github.com/Oluwaseyi-Java/WeatherApp",
-        tools: ["React","Data Fetching", "CSS", "HTML"]
+        tools: ["React", "Data Fetching", "CSS", "HTML"]
     },
     {
         id: 4,
         title: "Quiz App",
         description: "A simple web app to take test or quiz.",
         imgUrl: "Screenshot(12)",
-        websiteUrl: "https://question-app-ten.vercel.app/",
+        websiteUrl: "https://quiz-app-gray-xi.vercel.app/questions/",
         sourceUrl: "https://github.com/Oluwaseyi-Java/QuestionApp",
-        tools: ["React","Conditional Rendering", "CSS", "ContextAPI"]
+        tools: ["React", "Conditional Rendering", "CSS", "ContextAPI"]
+    },
+    {
+        id: 5,
+        title: "Qestion App",
+        description: "A simple web app to take test or quiz.",
+        imgUrl: "Screenshot(12)",
+        websiteUrl: "https://question-app-ten.vercel.app/",
+        sourceUrl: "https://github.com/Oluwaseyi-Java/QuizApp",
+        tools: ["React", "Conditional Rendering", "CSS", "ContextAPI"]
     }
 ]
 
