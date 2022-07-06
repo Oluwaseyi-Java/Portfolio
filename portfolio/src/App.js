@@ -8,6 +8,7 @@ import Projects from './components/Projects/Projects';
 import Services from './components/Services/Services';
 import Skill from './components/Skills/Skill';
 import { FaArrowCircleUp } from "react-icons/fa"
+import Reviews from './components/Reviews/Reviews';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <Skill />
       <Services />
       <Projects />
+      <Reviews/>
       <HireMe />
       <Footer />
       <a href='#home'>

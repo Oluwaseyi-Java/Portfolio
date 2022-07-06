@@ -22,7 +22,7 @@ const Services = () => {
     return (
         <div className='Services' id='services'>
             <Title title="Services" />
-            <p>What can I do for you?</p>
+            <p className='Head'>What can I do for you?</p>
             <div className='service-display'>
                 {serves}
             </div>

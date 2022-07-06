@@ -3,8 +3,6 @@ import Title from '../Title'
 import Project from './Project'
 import { ProjectData } from "../../UiData.js"
 
-import Pulse from 'react-reveal/Pulse';
-
 const Projects = () => {
 
     const [state, setState] = useState([])
@@ -32,9 +30,9 @@ const Projects = () => {
     return (
         <div className='Projects' id='projects'>
             <Title title="Projects" />
-            <Pulse>
-                <p>My Latest Work</p>
-            </Pulse>
+           
+                <p className='Head'>My Latest Work</p>
+           
             <div className='project-display'>
                 {projects}
             </div>

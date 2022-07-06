@@ -79,6 +79,7 @@ input[class=openSidebarMenu] {
     right: 15px;
     height: 22px;
     width: 22px;
+    animation: pulse 2s infinite;
 }
 
 .checkProperty {
@@ -234,7 +235,8 @@ header .Header img {
 .About,
 .Services,
 .Skill,
-.Projects {
+.Projects,
+.Reviews {
     padding: 40px 10% 40px 10%;
     border-bottom: 1px solid rgb(116, 116, 116);
 }
@@ -304,6 +306,10 @@ header .Header img {
     font-size: 1.5em;
 }
 
+.Services p.Head {
+    animation: pulse 2s infinite;
+}
+
 .Service {
     width: 95%;
     margin: auto;
@@ -334,6 +340,27 @@ header .Header img {
 .Projects p {
     color: #6b7280;
     font-size: 1.3em;
+}
+
+.Projects p.Head {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+
+        opacity: 0.6;
+    }
+
+    50% {
+
+        opacity: 1.0;
+    }
+
+    100% {
+
+        opacity: 0.6;
+    }
 }
 
 .Project {
@@ -386,6 +413,80 @@ header .Header img {
     border-radius: 2px;
     background-color: rgb(5, 144, 5);
     cursor: pointer;
+}
+
+
+.Reviews p {
+    color: #6b7280;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.Reviews button {
+    font-size: 1em;
+    padding: 5px 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    background-color: transparent;
+    color: #01d032;
+    align-items: center;
+    border: 1px solid #01d032;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.Reviews p.Head {
+    animation: pulse 2s infinite;
+}
+
+.Review {
+    width: 100%;
+}
+
+.Review .Review-con {
+    width: 80%;
+    border: 1px solid rgb(142, 142, 142);
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Review .Review-con .quote {
+    color: #01d032;
+    padding: 5px;
+    font-size: 3em;
+}
+
+.Review .Review-con p.text {
+    font-size: 0.8em;
+    color: white;
+    padding: 5px 10px;
+    transition: ease 2s;
+}
+
+.Review .Review-con p.name {
+    font-size: 0.8em;
+    text-align: right;
+    padding: 10px 10%;
+}
+
+.Review .navigation {
+    width: 20%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.Review .navigation .fa {
+    color: #01d032;
+    font-size: 1.3em;
+    padding: 5px;
+    text-align: center;
+}
+
+.Review .navigation .fa:active {
+    border: 1px solid #01d032;
+    border-radius: 2px;
 }
 
 .ShortContact {
