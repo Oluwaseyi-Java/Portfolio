@@ -1,39 +1,58 @@
 import React, { useEffect, useState } from 'react'
-import { FaQuoteRight, FaArrowRight, FaArrowLeft } from "react-icons/fa"
-import { reviewData } from '../../UiData'
+import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa"
+// import { reviewData } from '../../UiData'
 
 
-const Review = () => {
+const Review = ({ Review }) => {
 
-    const [review, setReview] = useState(reviewData)
-    const [index, setIndex] = useState(2);
+    const [index, setIndex] = useState(0);
 
-    useEffect(() => {
-        setReview(reviewData)
-    }, [])
+    const checkNumber = (number) => {
+        if (number >= Review.length) {
+            return 0
+        }
+        if (number < 0) {
+            return Review.length - 1
+        }
+        return number
+    }
+    const nextReview = () => {
+
+        setIndex((count) => {
+            const newIndex = count + 1
+            return checkNumber(newIndex)
+        })
+    }
+    const prevReview = () => {
+        setIndex((count) => {
+            const newIndex = count - 1
+            return checkNumber(newIndex)
+        })
+
+    }
+
 
 
     return (
         <article className='Review'>
-
             <div className='Review-con'>
-                <FaQuoteRight className='quote' />
-                <p className='text'> {review[index].content }</p>
-                <p className='name'>- { review[index].name}</p>
+                <FaQuoteRight
+                    className='quote'
+                />
+                <p className='text'> {Review[index].content}
+                </p>
+                <p className='name'>- {Review[index].name}
+                </p>
             </div>
             <div className='navigation'>
-                <FaArrowLeft 
-                className='fa left' 
-                onClick={(count)=>{
-                    setIndex(count-1)
-                }}
+                <FaChevronLeft
+                    className='fa left'
+                    onClick={prevReview}
                 />
-                <FaArrowRight
-                 className='fa right'
-                 onClick={(count)=>{
-                    setIndex(count+1)
-                 }}
-                  />
+                <FaChevronRight
+                    className='fa right'
+                    onClick={nextReview}
+                />
             </div>
         </article>
     )

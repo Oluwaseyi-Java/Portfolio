@@ -422,7 +422,7 @@ header .Header img {
     text-align: center;
 }
 
-.Reviews button {
+.Reviews .AddReviewBtn {
     font-size: 1em;
     padding: 5px 10px;
     display: flex;
@@ -450,6 +450,7 @@ header .Header img {
     margin: auto;
     text-align: center;
     border-radius: 10px;
+    min-height: 15rem;
 }
 
 .Review .Review-con .quote {
@@ -487,6 +488,23 @@ header .Header img {
 .Review .navigation .fa:active {
     border: 1px solid #01d032;
     border-radius: 2px;
+}
+
+.AddItems form {
+    color: #6b7280;
+    padding: 40px 0;
+}
+
+.modal {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.modal p {
+    color: aqua;
+    padding: 0;
+    margin: 0;
 }
 
 .ShortContact {
@@ -544,12 +562,12 @@ header .Header img {
     padding: 40px 0;
 }
 
-.InputMessage form {
+form {
     display: flex;
     flex-direction: column;
 }
 
-.InputMessage form .input {
+form .input {
     background-color: #6b728053;
     border: 1px solid #6b7280;
     padding: 8px 5px;
@@ -558,17 +576,17 @@ header .Header img {
     color: lime;
 }
 
-.InputMessage form .input:focus {
+form .input:focus {
     outline: 1px solid lime;
     border: none;
 }
 
-.InputMessage form .input.n3 {
+form .input.n3 {
     min-height: 100px;
     max-width: 100%;
 }
 
-.InputMessage form button {
+form button {
     width: 20%;
     margin: auto;
     padding: 5px 10px;

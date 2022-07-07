@@ -82,12 +82,12 @@ export const ServiceData = [
 
 export const reviewData = [
     {
-        content: "ojearch for the keyworLorem Ipsum has been th1500s when an unknow o ignore, add // eslint-disable-next-line to n printer took a  galley of type and scrambled it e industds to",
+        content: "ojIntook a  galley of type and scrambled it e industds to",
         name: "Paul Anita"
     },
     {
         content: "odnterview Preparation for Programming Roles nterview Preparation for Programming Roles nterview Preparation for Programming Rolesex.js",
-        name: "Agbalagba Anis when an unknown printer tooley of type and scrambled ia"
+        name: "Agbal ia"
     },
     {
         content: "ong you need to kno o ignore, add eslSearch for the keywords to learn more about each waw about funding, growing and scalec.js",

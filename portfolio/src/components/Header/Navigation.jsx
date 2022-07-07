@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Navigation = () => {
 
     const [check, setChecked] = useState(false)
-    console.log(check)
+    
     return (
         <>
 
@@ -27,6 +27,7 @@ const Navigation = () => {
                         <li ><a href='/#about'>About</a></li>
                         <li ><a href='/#services'>Services</a></li>
                         <li ><a href='/#projects'>Projects</a></li>
+                        <li ><a href='/#reviews'>Reviews</a></li>
                         <li ><a href='/#hire-me'>Hire me</a></li>
 
                     </ul>
