@@ -5,7 +5,7 @@ import {
     FaAndroid, FaNode, FaBootstrap,
     FaJava, FaJsSquare, FaCss3
 } from "react-icons/fa"
-
+import {SiFigma,SiAdobephotoshop} from  "react-icons/si"
 const Skill = () => {
     return (
         <div className='Skill'>
@@ -21,6 +21,8 @@ const Skill = () => {
                 <FaNode className='fa node' />
                 <FaAndroid className='fa android' />
                 <FaGit className='fa git' />
+                <SiAdobephotoshop className='fa ps'/>
+                <SiFigma className='fa figma'/>
                 <FaGithub className='fa github' />
             </div>
         </div>
