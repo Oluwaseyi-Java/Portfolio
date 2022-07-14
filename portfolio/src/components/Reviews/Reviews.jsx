@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from 'react'
 import Title from "../Title"
 import Review from './Review'
-
+import axios from "axios"
 
 
 const reducer = (state, action) => {
@@ -12,7 +12,7 @@ const reducer = (state, action) => {
         }
     }
     if (action.type === "ADDED_REVIEW") {
-        const newReview=[...state.review,action.payload]
+        const newReview = [...state.review, action.payload]
         return {
             ...state,
             review: newReview,
@@ -71,6 +71,15 @@ const Reviews = () => {
     const HandleSubmit = (e) => {
         e.preventDefault()
 
+        axios.post("http://localhost:5000/api", reviewData)
+            .then(res => {
+                console.log(res.data)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
+
         if (reviewData) {
 
             dispatch({ type: "ADDED_REVIEW", payload: reviewData })
@@ -82,11 +91,11 @@ const Reviews = () => {
         else {
             dispatch({ type: "NO_ITEM" })
         }
-        
+
         console.log(state.review)
         setTimeout(() => { closeModal() }, 3000)
     }
-    
+
     const AddReview = () => {
         dispatch({ type: "ENABLE" })
     }

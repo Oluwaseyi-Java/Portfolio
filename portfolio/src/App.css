@@ -445,7 +445,7 @@ header .Header img {
 }
 
 .Review .Review-con {
-    width: 80%;
+    width: 95%;
     border: 1px solid rgb(142, 142, 142);
     margin: auto;
     text-align: center;
@@ -455,14 +455,14 @@ header .Header img {
 
 .Review .Review-con .quote {
     color: #01d032;
-    padding: 5px;
-    font-size: 3em;
+    padding-top: 20px;
+    font-size: 2.5em;
 }
 
 .Review .Review-con p.text {
     font-size: 0.8em;
     color: white;
-    padding: 5px 10px;
+    padding: 5px 10%;
     transition: ease 2s;
 }
 
@@ -475,14 +475,15 @@ header .Header img {
 .Review .navigation {
     width: 20%;
     margin: 20px auto;
-    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 .Review .navigation .fa {
     color: #01d032;
-    font-size: 1.3em;
+    font-size: 0.9em;
     padding: 5px;
-    text-align: center;
 }
 
 .Review .navigation .fa:active {

@@ -13,20 +13,16 @@ import Reviews from './components/Reviews/Reviews';
 
 function App() {
 
-//   const [count, setCount] = useState(0)
+//   const [name, setName] = useState([])
   
-//   const Event=() => {
-//     setCount(window.innerWidth)
-//   }
 //   useEffect(() => {
-//     window.addEventListener("resize", Event)
-// console.log(count)
-//     return () => {
-//      window.removeEventListener("resize",Event)
-//     }
-//   }, [count])
-
-
+//     fetch("/api").then(
+//       response=>response.json()
+//     ).then(
+//       data=>  setName(data)
+//     )
+//   console.log(name)
+// },[])
 
   return (
     <div className="App" id='home'>
