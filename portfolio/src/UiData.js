@@ -17,7 +17,7 @@ export const ProjectData = [
         id: 2,
         title: "E-commerce Website",
         description: "A typical e-commerce website landing page template. ",
-        imgUrl: "Screenshot(12)",
+        imgUrl: "Screenshot(31)",
         websiteUrl: "https://e-commerce-project-o9kueqvuf-oluwaseyi-java.vercel.app/",
         sourceUrl: "https://github.com/Oluwaseyi-Java/E-commerceProject/tree/main/e-commerce",
         tools: ["React", "React Reveal", "CSS", "HTML"]
@@ -26,7 +26,7 @@ export const ProjectData = [
         id: 3,
         title: "Weather App",
         description: "A web app created for you to the weather of different cities around the world.",
-        imgUrl: "Screenshot(13)",
+        imgUrl: "Screenshot(33)",
         websiteUrl: "https://weather-app-rose-five.vercel.app/",
         sourceUrl: "https://github.com/Oluwaseyi-Java/WeatherApp",
         tools: ["React", "Data Fetching", "CSS", "HTML"]
@@ -35,7 +35,7 @@ export const ProjectData = [
         id: 4,
         title: "Quiz App",
         description: "A simple web app to take test or quiz.",
-        imgUrl: "Screenshot(12)",
+        imgUrl: "Screenshot(32)",
         websiteUrl: "https://quiz-app-gray-xi.vercel.app/questions/",
         sourceUrl: "https://github.com/Oluwaseyi-Java/QuizApp",
         tools: ["React", "Conditional Rendering", "CSS", "ContextAPI"]
@@ -44,10 +44,19 @@ export const ProjectData = [
         id: 5,
         title: "Question App",
         description: "A simple web app to take test or quiz.",
-        imgUrl: "Screenshot(12)",
+        imgUrl: "Screenshot(34)",
         websiteUrl: "https://question-app-ten.vercel.app/",
         sourceUrl: "https://github.com/Oluwaseyi-Java/QuestionApp",
         tools: ["React", "Conditional Rendering", "CSS", "ContextAPI"]
+    },
+    {
+        id: 6,
+        title: "Static Job Listing",
+        description: "A single page app to list availabele jobs with filter.",
+        imgUrl: "Screenshot(35)",
+        websiteUrl: "https://static-job-listing-zeta.vercel.app/",
+        sourceUrl: "https://github.com/Oluwaseyi-Java/StaticJobListing",
+        tools: ["React", "Responsive Design", "Filter"]
     }
 ]
 
