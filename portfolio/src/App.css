@@ -194,7 +194,7 @@ header .Header img {
 
 .OverviewText h1 {
     background: -webkit-linear-gradient(0deg, rgb(38, 248, 255), #01d032);
-    -webkit-background-clip: text;
+    background-clip: text;
     text-transform: uppercase;
     font-size: 1.8em;
     -webkit-text-fill-color: transparent;

@@ -71,12 +71,12 @@ const Reviews = () => {
     const HandleSubmit = (e) => {
         e.preventDefault()
 
-        axios.post("http://localhost:5000/api", reviewData)
+        axios.post("http:localhost:5000/", reviewData)
             .then(res => {
                 console.log(res.data)
             })
             .catch(error => {
-                console.log(error)
+                console.log("Cannot fetch", error)
             })
 
 
