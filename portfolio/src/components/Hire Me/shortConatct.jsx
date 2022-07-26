@@ -12,7 +12,7 @@ const shortConatct = () => {
             <div className='cv'>
                 <p className='text'>CV:</p>
                 <button className='download_btn' onClick={() => {
-                    window.location.href ="https://drive.google.com/file/d/1YFsMVP7oeaGeFArxbniD9tW9aZ2gyIVB/view?usp=sharing"
+                    window.location.href ="https://drive.google.com/file/d/14ULvlqOoVo9u30htq9EpzXunPzAJuPi2/view?usp=sharing"
                 }}>
                     Download/View <FaDownload className='fa' />
                 </button>
