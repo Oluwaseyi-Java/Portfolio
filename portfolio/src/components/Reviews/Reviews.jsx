@@ -71,7 +71,9 @@ const Reviews = () => {
     const HandleSubmit = (e) => {
         e.preventDefault()
 
-        axios.post("http:localhost:5000/", reviewData)
+        //axios// started fetching data
+
+        axios.post("https://mynodeproject22.herokuapp.com/notes", {reviewData})
             .then(res => {
                 console.log(res.data)
             })
@@ -79,6 +81,7 @@ const Reviews = () => {
                 console.log("Cannot fetch", error)
             })
 
+        //End of data fetching
 
         if (reviewData) {
 
