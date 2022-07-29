@@ -1,10 +1,22 @@
-import React, { useReducer, useState } from 'react'
+import React, { useEffect, useReducer, useState } from 'react'
 import Title from "../Title"
 import Review from './Review'
 import axios from "axios"
 
 
 const reducer = (state, action) => {
+
+    if (action.type === "LOADED_DATA") {
+
+        let newReview=action.payload;
+        // action.payload.map(item => newReview = [...state.review, item])
+
+        return {
+            ...state,
+            review: newReview
+        }
+    }
+
     if (action.type === "ENABLE") {
         return {
             ...state,
@@ -12,10 +24,12 @@ const reducer = (state, action) => {
         }
     }
     if (action.type === "ADDED_REVIEW") {
-        const newReview = [...state.review, action.payload]
+
+        const newItem = [...state.review, action.payload]
+
         return {
             ...state,
-            review: newReview,
+            review: newItem,
             modalContent: "Added successfully",
             isModalOpen: true,
             isReviewOpen: false
@@ -34,20 +48,8 @@ const reducer = (state, action) => {
 const defaultState = {
     review: [
         {
-            content: "ojIntook a  galley of type and scrambled it e industds to",
-            name: "Paul Anita"
-        },
-        {
-            content: "odnterview Preparation for Programming Roles nterview Preparation for Programming Roles nterview Preparation for Programming Rolesex.js",
-            name: "Agbal ia"
-        },
-        {
-            content: "ong you need to kno o ignore, add eslSearch for the keywords to learn more about each waw about funding, growing and scalec.js",
-            name: "Oluwaseyi Anita"
-        },
-        {
-            content: "ojecLo arch for the keywords to learn more about each warning.rem Ipsum has been the industry'ss",
-            name: "Vesss Looker"
+            content: "Thanks",
+            name: "Admin"
         }
     ],
     modalContent: "",
@@ -57,12 +59,37 @@ const defaultState = {
 
 const Reviews = () => {
 
-    const [reviewData, setReviewData] = useState({
-        content: "",
-        name: ""
-    })
+    const [reviewData, setReviewData] = useState(
+        {
+            content: "",
+            name: ""
+        }
+    )
 
     const [state, dispatch] = useReducer(reducer, defaultState)
+
+    const [loadedData, setLoadedData] = useState([]);
+    useEffect(() => {
+        axios.get("https://mynodeproject22.herokuapp.com/notes")
+            .then(response => {
+                console.log(response.data)
+
+                setLoadedData(response.data)
+            })
+            .catch(err => {
+                console.log("error from fetching data", err)
+            })
+    }, [])
+
+    useEffect(() => {
+        if (loadedData.length !== 0) {
+            dispatch({
+                type: "LOADED_DATA",
+                payload: loadedData
+            })
+        }
+    }, [loadedData])
+
 
     const closeModal = () => {
         dispatch({ type: "CLOSE_MODAL" })
@@ -73,7 +100,7 @@ const Reviews = () => {
 
         //axios// started fetching data
 
-        axios.post("https://mynodeproject22.herokuapp.com/notes", {reviewData})
+        axios.post("https://mynodeproject22.herokuapp.com/notes", { reviewData })
             .then(res => {
                 console.log(res.data)
             })

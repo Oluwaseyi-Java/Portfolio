@@ -41,7 +41,7 @@ const Review = ({ Review }) => {
                 />
                 <p className='text'> {Review[index].content}
                 </p>
-                <p className='name'>- {Review[index].name}
+                <p className='name'>- {Review[index].name }
                 </p>
             </div>
             <div className='navigation'>
