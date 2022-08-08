@@ -18,7 +18,7 @@ export const ProjectData = [
         title: "E-commerce Website",
         description: "A typical e-commerce website landing page template. ",
         imgUrl: "Screenshot(31)",
-        websiteUrl: "https://e-commerce-project-o9kueqvuf-oluwaseyi-java.vercel.app/",
+        websiteUrl: "https://e-commerce-project-git-main-oluwaseyi-java.vercel.app/",
         sourceUrl: "https://github.com/Oluwaseyi-Java/E-commerceProject/tree/main/e-commerce",
         tools: ["React", "React Reveal", "CSS", "HTML"]
     },
