@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App" id='home'>
+
       <Header />
       <About description="Hi I am  Oluwaseyi, Adesunloro Olatunde, I'm a Freelance
       Full Stack and Android Developer Based in Nigeria, and I'm very passionate and dedicated to my 
@@ -41,6 +42,7 @@ function App() {
       <a href='#home'>
         <FaArrowCircleUp className='arrowUp' />
       </a>
+
     </div>
   );
 }
