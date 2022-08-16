@@ -8,7 +8,7 @@ const reducer = (state, action) => {
 
     if (action.type === "LOADED_DATA") {
 
-        let newReview=action.payload;
+        let newReview = action.payload;
         // action.payload.map(item => newReview = [...state.review, item])
 
         return {
@@ -70,7 +70,7 @@ const Reviews = () => {
 
     const [loadedData, setLoadedData] = useState([]);
     useEffect(() => {
-        axios.get("https://mynodeproject22.herokuapp.com/notes")
+        axios.get("https://portfolio-review.herokuapp.com")
             .then(response => {
                 console.log(response.data)
 
@@ -100,7 +100,7 @@ const Reviews = () => {
 
         //axios// started fetching data
 
-        axios.post("https://mynodeproject22.herokuapp.com/notes", { reviewData })
+        axios.post("https://portfolio-review.herokuapp.com", { reviewData })
             .then(res => {
                 console.log(res.data)
             })
