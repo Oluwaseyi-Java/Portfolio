@@ -683,6 +683,7 @@ form button {
     .Skill .fa {
         font-size: 5.0em;
     }
+
     .service-display {
         display: flex;
         flex-wrap: wrap;
@@ -705,9 +706,6 @@ form button {
 
     .Project {
         width: 40%;
-    }
-    .Reviews{
-        
     }
 }
 
