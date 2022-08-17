@@ -293,7 +293,7 @@ header .Header img {
 
 .Skill .fa {
     color: #6b7280;
-    font-size: 4.0em;
+    font-size: 3.0em;
     padding: 20px 0 0 0;
 }
 
@@ -414,7 +414,20 @@ header .Header img {
     background-color: rgb(5, 144, 5);
     cursor: pointer;
 }
-
+.Show p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 5px ;
+    width: 40%;
+    margin: auto;
+    cursor: pointer;
+}
+.Show p:hover{
+    border:1px solid #01d032;
+}
 
 .Reviews p {
     color: #6b7280;
