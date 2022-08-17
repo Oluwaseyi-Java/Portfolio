@@ -57,10 +57,26 @@ export const ProjectData = [
         websiteUrl: "https://static-job-listing-zeta.vercel.app/",
         sourceUrl: "https://github.com/Oluwaseyi-Java/StaticJobListing",
         tools: ["React", "Responsive Design", "Filter"]
+    },
+    {
+        id: 7,
+        title: "Social Media Dashboard",
+        description: "A sigle page app that list your social network engagements.",
+        imgUrl: "Screenshot(42)",
+        websiteUrl: "https://social-media-dashboard-vert-ten.vercel.app/",
+        sourceUrl: "https://github.com/Oluwaseyi-Java/SocialMediaDashboard",
+        tools: ["React", "Responsive Design", "Filter"]
+    },
+    {
+        id: 8,
+        title: "Easy Bank Landing Page",
+        description: "A bank landing page design.",
+        imgUrl: "Screenshot(43)",
+        websiteUrl: "https://easy-bank-landing-page-lovat.vercel.app/",
+        sourceUrl: "https://github.com/Oluwaseyi-Java/SocialMediaDashboard",
+        tools: ["React", "Responsive Design", "Filter"]
     }
 ]
-
-
 
 export const ServiceData = [
     {

@@ -100,7 +100,8 @@ const Reviews = () => {
 
         //axios// started fetching data
 
-        axios.post("https://portfolio-review.herokuapp.com", { reviewData })
+        // axios.post("https://portfolio-review.herokuapp.com", { reviewData })
+        axios.post("http://localhost:4000", { reviewData })
             .then(res => {
                 console.log(res.data)
             })
