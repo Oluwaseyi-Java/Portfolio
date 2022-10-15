@@ -26,7 +26,7 @@ const Project = ({ id, title, description, imgUrl, visitSite, visitSource, tools
                 <div className='Project-btn'>
                     <button onClick={() => {
                         window.location.assign(visitSource)
-                    }}>View Source</button>
+                    }}>View Source Code</button>
                 </div>
             </div>
         </Zoom>
