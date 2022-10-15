@@ -1,5 +1,4 @@
 import React from 'react'
-import {FiExternalLink} from "react-icons/fi"
 import Zoom from 'react-reveal/Zoom';
 
 const Project = ({ id, title, description, imgUrl, visitSite, visitSource, tools }) => {
@@ -26,7 +25,7 @@ const Project = ({ id, title, description, imgUrl, visitSite, visitSource, tools
                 <div className='Project-btn'>
                     <button onClick={() => {
                         window.location.assign(visitSource)
-                    }}>View Source Code <FiExternalLink/></button>
+                    }}>View Source Code</button>
                 </div>
             </div>
         </Zoom>
