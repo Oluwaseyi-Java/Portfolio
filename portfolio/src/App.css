@@ -458,7 +458,7 @@ header .Header img {
 }
 
 .Review .Review-con {
-    width: 60%;
+    width: 95%;
     border: 1px solid rgb(142, 142, 142);
     margin: auto;
     text-align: center;
@@ -719,6 +719,13 @@ form button {
 
     .Project {
         width: 40%;
+    }
+    .Review .Review-con {
+    width: 60%;
+    }
+    .AddItem form {
+        width:60%;
+        margin:auto;
     }
 }
 
