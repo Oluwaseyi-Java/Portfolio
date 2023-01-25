@@ -95,13 +95,13 @@ export const ServiceData = [
         id: 3,
         font: <FaMobileAlt className='img-template' />,
         title: "Responsive Design",
-        description: "Responsive web design aims to make web pages render well on a variety of devices and sceeen sizes from minimum to maximum diplay size to ensure usability and satisfaction"
+        description: "Responsive web design aims to make web pages render well on a variety of devices and sceeen sizes from minimum to maximum display size to ensure usability and user satisfaction"
     },
     {
         id: 4,
         font: <FaAndroid className='img-template' />,
         title: "Android development",
-        description: "you want a unique medium by which people can use your services, developing an android app that runn natively using java is what i do for you. "
+        description: "You want a unique medium by which people can use your services, developing an android app that run natively using Java/Kotlin is what I can do for you. "
     }
 ]
 

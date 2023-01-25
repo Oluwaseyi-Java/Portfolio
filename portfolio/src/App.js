@@ -29,7 +29,7 @@ function App() {
       <Header />
       <About description="Hi I am  Oluwaseyi, Adesunloro Olatunde, I'm a Freelance
       Web and Android Developer Based in Nigeria, and I'm very passionate and dedicated to my 
-      work. With 2 years experience as a professional Full Stack Developer. I have acquired the skills necessary 
+      work. With 2 years plus experience as a professional Full Stack Developer. I have acquired the skills necessary 
       to build great and premium websites.
       "/>
       <Skill />
