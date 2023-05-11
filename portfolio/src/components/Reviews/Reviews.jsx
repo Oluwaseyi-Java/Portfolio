@@ -101,7 +101,7 @@ const Reviews = () => {
         //axios// started fetching data
 
         // axios.post("https://portfolio-review.herokuapp.com", { reviewData })
-        axios.post("https://portfolio-review.herokuapp.com", { reviewData })
+        axios.post("https://review-api-eha9.onrender.com", { reviewData })
             .then(res => {
                 console.log(res.data)
             })

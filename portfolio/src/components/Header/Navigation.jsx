@@ -6,7 +6,6 @@ const Navigation = () => {
     
     return (
         <>
-
             <div className='Navigation'>
                 {<input
                     type="checkbox"
