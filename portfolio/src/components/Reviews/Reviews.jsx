@@ -70,7 +70,7 @@ const Reviews = () => {
 
     const [loadedData, setLoadedData] = useState([]);
     useEffect(() => {
-        axios.get("https://portfolio-review.herokuapp.com")
+        axios.get("https://review-api-eha9.onrender.com/")
             .then(response => {
                 console.log(response.data)
 
@@ -101,7 +101,7 @@ const Reviews = () => {
         //axios// started fetching data
 
         // axios.post("https://portfolio-review.herokuapp.com", { reviewData })
-        axios.post("https://review-api-eha9.onrender.com", { reviewData })
+        axios.post("https://review-api-eha9.onrender.com/", { reviewData })
             .then(res => {
                 console.log(res.data)
             })
